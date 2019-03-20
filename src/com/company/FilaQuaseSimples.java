@@ -38,12 +38,12 @@ class FilaRunning{
     }
     public void listar(){
 
+        System.out.println("-------------------------------");
         for(Processo p : this.processos){
             System.out.print(p.getNome());
             System.out.print("\n");
             System.out.print("Tempo:"+p.getTempo());
             System.out.print("\n");
-
             System.out.print("\n--\n");
 
         }
@@ -65,13 +65,13 @@ class FilaReady{
         this.executando --;
     }
     public void listar(){
+
         System.out.println("-----------------------------");
         for(Processo p : this.processos){
             System.out.print(p.getNome());
             System.out.print("\n");
             System.out.print("Tempo:"+p.getTempo());
             System.out.print("\n");
-
             System.out.print("\n--\n");
 
         }
